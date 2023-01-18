@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="apps/name.js" async></script>
+    <script src="apps/mainfocus.js" async></script>
+    <script src="apps/tasks.js" async></script>
+    <script src="apps/quotes.js" async></script>
+    <script src="apps/time.js" async></script>
+    <script src="apps/backgroundimg.js" async></script>
+
+<body id="main-bg" class="main-bg">
+
+  <div class="top-row">
+    <button id="change-image-button">Change Image</button>
+  </div>
+  
+  <div class="region above">
+    <div class="center-above">
+      <div class="app-container time-display">
+        <span id="hours"></span>
+        <span>:</span>
+        <span id="minutes"></span>
+        <span>:</span>
+        <span id="seconds"></span>
+        <span id="session">AM</span>
+      </div>
+      <div class="app-container greeting">
+        <p>Welcome back, <span id="name">00</span></p>
+      </div>
+    </div>
+  </div>
+ 
+
+  <div class="region middle">
+    <div class="center-middle">
+      <h3 id="main-focus-question">What is your main focus today?</h3>
+      <h3 id="main-focus-today">TODAY</h3>
+      <div id="focus-input-container">
+        <input type="text" id="main-focus-input" class="focus-field">
+      </div>
+      <div id="focus-output-container">
+        <span id="focus-output"></span>
+      </div>
+      <div id="done-or-new">
+        <button id="done-button">Done for the day</button>
+        <button id="restart-button">Start a new focus</button>
+      </div>
+    </div>
+  </div>
+    
+  <div class="region below">
+    <div class="center-below">
+      <div id="quote-display"></div>
+      <div class="quote-btn-container">
+        <button onclick="newQuote()" class="primary-btn">Inspire</button>
+        <button onclick="addQuote()" class="secondary-btn">Add new quote</button>
+      </div>
+    </div>  
+  </div>
+ 
+
+<div class="todo-btn-container">
+  <button id="modal-btn" class="button toDo-btn primary-button">ToDo</button>
+</div>
+
+<div id="modal-container" class="modal-container">
+  <span class="close">Close</span>
+<div id="modal">
+    <div id="myDIV" class="header">
+    <h2>Tasks</h2>
+    <div class="input-container">
+      <input type="text" id="userInput" placeholder="Add task..">
+      <span onclick="addItem()" class="addBtn">Add</span>
+    </div>
+    </div>
+    <ul id="toDoList"></ul>
+</div>
+</div>
+
+       
+</body>
+</html>

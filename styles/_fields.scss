@@ -1,0 +1,57 @@
+//Input Container
+.input-container {
+    display: flex;
+}
+
+//Focus input field
+
+.focus-field {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+    outline-width: 0;
+    background-color: rgba(0,0,0,0);
+}
+
+ /* Style the input */
+ input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 60%;
+    font-size: 16px;
+  }
+
+// When clicked on, add a background color and strike out text
+ul li.checked {
+    background: green;
+    color: white;
+    text-decoration: line-through;
+}
+ /* Style the "Add" button */
+
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+span.checked {
+    background: green;
+    color: white;
+    text-decoration: line-through;
+}

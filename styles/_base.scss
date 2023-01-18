@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&family=Qwitcher+Grypen&display=swap');
+
+// typography, fontface, reset, colors
+// Colors
+$mainpink: hsl(334.5,87,45.1);
+$white: hsl(0, 0%, 100%);
+$textgray: hsl(0,0%,30%);
+
+// Font Sizes
+$font-sm: 0.875rem;
+$font-med: 1.125rem;
+$font-lg: 1.25rem;
+$font-xlg: 3.25rem;
+
+// Reset and globals
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $font-sm;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    color: $textgray;
+}
