@@ -1,7 +1,9 @@
 //----- RANDOM QUOTE GENERATOR -----
 //Generate random quote
 var quotes = [
-    'May the force be with you', 'You know nothing, Jon Snow', "You're a wizard, Harry"
+    "'May the force be with you'",
+    "'You know nothing, Jon Snow'",
+     "'You're a wizard, Harry'"
   ]
   
   function newQuote() {

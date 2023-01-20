@@ -1,9 +1,12 @@
-document.getElementById('main-bg').style.backgroundImage = "url('https://4kwallpapers.com/images/walls/thumbs_3t/5738.jpeg')";
+//document.getElementById('main-bg').style.backgroundImage = "url('https://c4.wallpaperflare.com/wallpaper/681/53/214/background-color-texture-wallpaper-preview.jpg')";
 
 let images = [
-    'https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/957002/berchtesgaden-alpine-watzmann-berchtesgaden-national-park-957002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    '/bg-images/bg-1.jpg',
+    '/bg-images/bg-2.jpg',
+    '/bg-images/bg-3.jpg',
+    '/bg-images/bg-4.jpg',
+    '/bg-images/bg-5.jpg',
+    '/bg-images/bg-6.jpg',
 ];
 
 // Select a random image from the array when the button is clicked

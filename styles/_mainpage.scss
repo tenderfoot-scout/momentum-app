@@ -1,4 +1,11 @@
 //MAIN PAGE: WELCOME, TIME, FOCUS
+.main-bg {
+  background-image: url('/bg-images/bg-5.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .top-row {
   padding: 13px;
 }
@@ -12,7 +19,7 @@
   display: flex;
   flex: 1 1 50%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   flex-direction: column;
 }
@@ -20,33 +27,38 @@
 .center-below {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.time-display {
-  font-size: 2.25rem;
-}
-
-#main-focus-question {
-  display: inline;
-}
-
-#main-focus-today {
-  display: none;
+  //align-items: center;
 }
 
 //FOCUS
+#focus-input-container {
+  font-size: $font-med;
+  display: inline;
+}
+
+#focus-output-container {
+  display: none;
+}
+
 .focus-completed {
   text-decoration: line-through;
   color: red;
 }
 
+#done-output {
+  display: none;
+}
+
 //QUOTE
 #quote-display {
+  text-align: center;
+  font-size: $font-med;
   height: 1.25rem;
 }
 
 .quote-btn-container {
+  display: flex;
+  justify-content: space-around;
   margin: 10px;
 }
 
