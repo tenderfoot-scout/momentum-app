@@ -1,4 +1,9 @@
 //MAIN PAGE: WELCOME, TIME, FOCUS
+body {
+  overflow-y: hidden;
+  height: 100vh;
+  width: 100vw;
+}
 .main-bg {
   background-image: url('/bg-images/bg-5.jpg');
   background-repeat: no-repeat;
@@ -50,6 +55,9 @@
 }
 
 //QUOTE
+h2 {
+  color: white;
+}
 #quote-display {
   text-align: center;
   font-size: $font-med;
@@ -62,14 +70,24 @@
   margin: 10px;
 }
 
-//TO-DO LIST
-
-.todo-btn-container {
-    position: absolute;
-    bottom: 0;
-    margin: 2%;
+#quote-modal-container {
+  display: none; //hidden by default
+  position: fixed; //stay in place
+  z-index: 1; //sit on top
+  left: 0;
+  top: 0;
+  width: 100%; //full width
+  height: 100%; //full height
+  overflow: auto;
+  background-color: rgb(106, 106, 106);
 }
 
+#empty-alert {
+  display: none;
+}
+
+
+//TO-DO LIST
 #modal-container {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -80,6 +98,7 @@
     height: 100%; /* Full height */
     overflow: auto;
     background-color: white;
+    color: black;
 }
 
 /* Remove margins and padding from the list */
@@ -146,7 +165,7 @@ ul {
   
   .close:hover {
     background-color: #f44336;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   /* Style the header */

@@ -16,7 +16,7 @@
 <body id="main-bg" class="main-bg">
 
   <div class="top-row">
-    <button id="change-image-button">Change Image</button>
+    <i id="change-image-button" class="fa-solid fa-shuffle fa-lg"></i>
   </div>
   
   <div class="region above">
@@ -60,29 +60,44 @@
     <div class="center-below">
       <div id="quote-display"></div>
       <div class="quote-btn-container">
-        <button onclick="newQuote()" class="primary-btn">Inspire</button>
-        <button onclick="addQuote()" class="secondary-btn">Add new quote</button>
+        <button onclick="generateQuote()" class="primary-btn">Inspire</button>
+        <button id="open-quote-modal" class="secondary-btn">Add new quote</button>
       </div>
     </div>  
   </div>
+
+  <div id="quote-modal-container">
+    <span class="close-quote-modal">Close</span>
+    <div id="quote-modal">
+        <div id="quote-div" class="quote-header">
+      <h2>Add your quote</h2>
+        <div class="quote-input-container">
+            <input type="text" name="quote" id="quote-input" placeholder="Add Quote..">
+            <span class="add-quote-btn">Add</span>
+            <p id="empty-alert">You must submit an entry!</p>
+          </div>
+    </div>
+  </div>
+  </div>
+
  
 
 <div class="todo-btn-container">
-  <button id="modal-btn" class="button toDo-btn primary-button">ToDo</button>
+  <span id="modal-btn" class="todo-btn">To-Do</span>
 </div>
 
 <div id="modal-container" class="modal-container">
   <span class="close">Close</span>
-<div id="modal">
+  <div id="modal">
     <div id="myDIV" class="header">
-    <h2>Tasks</h2>
-    <div class="input-container">
-      <input type="text" id="userInput" placeholder="Add task..">
-      <span onclick="addItem()" class="addBtn">Add</span>
-    </div>
+      <h2>Tasks</h2>
+      <div class="input-container">
+        <input type="text" id="userInput" placeholder="Add task..">
+        <span onclick="addItem()" class="addBtn">Add</span>
+      </div>
     </div>
     <ul id="toDoList"></ul>
-</div>
+  </div>
 </div>
 
        
